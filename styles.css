@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 #outline {
     width: 300px;
     height: auto;
@@ -5,34 +9,51 @@
     border: 3px solid darkblue;
 }
 
+#main {
+    display:flex;
+    flex-direction: row;
+}
+
 .display {
+    
     width: auto;
-    height: 80px;
     background-color: white;
-    border: 3px solid black;
+    border: 5px solid black;
     display: flex;
+    margin: 3px;
+    align-items: center;
     justify-content: end;
     line-height: 80px;
     font-size: 50px;
     padding-right: 10px;
-    margin: 3px;
+    margin-bottom: 0px;
+    
 }
 
 #input {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    width: auto;
+    grid-template-columns: auto auto auto;
     grid-gap: 3px;
     padding: 3px;
 }
 
+#operators {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: auto;
+}
+
 .button {
     display: flex;
-    width: auto;
-    height: 60px;
+    width: 70px;
     background-color: goldenrod;
     border: 1px solid black;
     justify-content: center;
-    line-height: 60px;
+    line-height: 50px;
+    font-size: 20px;
 }
 
 .button.operator {
@@ -40,7 +61,5 @@
 }
 
 .button.clear {
-    background-color: goldenrod;
-    margin: 3px;
-    margin-bottom: 0px;
+    background-color: darkgoldenrod;
 }
