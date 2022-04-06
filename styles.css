@@ -1,0 +1,46 @@
+#outline {
+    width: 300px;
+    height: auto;
+    background-color: rgb(108, 208, 231);
+    border: 3px solid darkblue;
+}
+
+.display {
+    width: auto;
+    height: 80px;
+    background-color: white;
+    border: 3px solid black;
+    display: flex;
+    justify-content: end;
+    line-height: 80px;
+    font-size: 50px;
+    padding-right: 10px;
+    margin: 3px;
+}
+
+#input {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 3px;
+    padding: 3px;
+}
+
+.button {
+    display: flex;
+    width: auto;
+    height: 60px;
+    background-color: goldenrod;
+    border: 1px solid black;
+    justify-content: center;
+    line-height: 60px;
+}
+
+.button.operator {
+    background-color: rgb(219, 66, 66);
+}
+
+.button.clear {
+    background-color: goldenrod;
+    margin: 3px;
+    margin-bottom: 0px;
+}
