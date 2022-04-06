@@ -1,16 +1,17 @@
 * {
     box-sizing: border-box;
+    display: flex;
 }
 
 #outline {
+    display: block;
     width: 300px;
     height: auto;
-    background-color: rgb(108, 208, 231);
+    background-color: lightgray;
     border: 3px solid darkblue;
 }
 
 #main {
-    display:flex;
     flex-direction: row;
 }
 
@@ -19,7 +20,6 @@
     width: auto;
     background-color: white;
     border: 5px solid black;
-    display: flex;
     margin: 3px;
     align-items: center;
     justify-content: end;
@@ -39,7 +39,6 @@
 }
 
 #operators {
-    display: flex;
     flex-direction: column;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -47,19 +46,19 @@
 }
 
 .button {
-    display: flex;
     width: 70px;
+    justify-content: center;
     background-color: goldenrod;
     border: 1px solid black;
-    justify-content: center;
     line-height: 50px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .button.operator {
+    height: auto;
     background-color: rgb(219, 66, 66);
 }
 
 .button.clear {
-    background-color: darkgoldenrod;
+    background-color: skyblue;
 }
